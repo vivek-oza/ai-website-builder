@@ -46,13 +46,16 @@ export function HeroSection() {
 
         <h1 className="text-6xl flex md:flex-row flex-col items-center gap-x-6 font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent font-manrope md:text-6xl lg:text-7xl">
           <div className="flex items-center gap-2">
-            <div> Build </div> <HeadCircuitIcon weight="fill" color="#85b749" className="inline-block size-16" />
+            <div> Build </div> 
+            {/* <HeadCircuitIcon weight="fill" color="#85b749" className="inline-block size-16" /> */}
           </div>
           <div className="flex items-center gap-2">
-            <div> Ship </div> <RocketLaunchIcon weight="fill" color="#85b749" className="inline-block size-16" />
+            <div> Ship </div>
+            {/* <RocketLaunchIcon weight="fill" color="#85b749" className="inline-block size-16" /> */}
           </div>
           <div className="flex items-center gap-2">
-            <div> Repeat </div> <ArrowsClockwise weight="fill" color="#85b749" className="inline-block size-16" />
+            <div> Repeat </div>
+            {/* <ArrowsClockwise weight="fill" color="#85b749" className="inline-block size-16" /> */}
           </div>
         </h1>
 
