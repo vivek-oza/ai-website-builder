@@ -1,0 +1,5 @@
+# Copy these into your Vercel Project Settings -> Environment Variables
+# and/or create a local .env file for development.
+
+# Public site URL (protocol + domain), used in metadata, sitemap, robots, etc.
+NEXT_PUBLIC_SITE_URL=https://www.buildship.in

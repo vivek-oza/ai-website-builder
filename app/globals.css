@@ -1,0 +1,210 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color palette for AI SaaS with dark theme, lime green accents, and dark blue */
+  --background: oklch(0.11 0 0); /* Dark black #1a1a1a */
+  --foreground: oklch(0.985 0 0); /* White */
+  --card: oklch(0.08 0 0 / 0.8); /* Dark with transparency for glassy effect */
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.15 0 0 / 0.9); /* Dark gray instead of blue */
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.72 0.15 130); /* More subtle lime green */
+  --primary-foreground: oklch(0.11 0 0); /* Dark text on lime green */
+  --secondary: oklch(0.15 0 0); /* Dark gray instead of blue */
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.08 0 0); /* Dark gray #121212 */
+  --muted-foreground: oklch(0.7 0 0);
+  --accent: oklch(0.72 0.15 130); /* Subtle lime green accent */
+  --accent-foreground: oklch(0.11 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.985 0 0 / 0.2); /* Light border with transparency */
+  --input: oklch(0.08 0 0); /* Dark input background */
+  --ring: oklch(0.72 0.15 130 / 0.5); /* Subtle lime green focus ring */
+  --chart-1: oklch(0.72 0.15 130); /* Subtle lime green */
+  --chart-2: oklch(0.15 0 0); /* Dark gray */
+  --chart-3: oklch(0.577 0.245 27.325); /* Red */
+  --chart-4: oklch(0.985 0 0); /* White */
+  --chart-5: oklch(0.08 0 0); /* Dark gray */
+  --radius: 0.5rem;
+  --sidebar: oklch(0.15 0 0); /* Dark gray sidebar */
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.72 0.15 130); /* Subtle lime green */
+  --sidebar-primary-foreground: oklch(0.11 0 0);
+  --sidebar-accent: oklch(0.72 0.15 130);
+  --sidebar-accent-foreground: oklch(0.11 0 0);
+  --sidebar-border: oklch(0.985 0 0 / 0.2);
+  --sidebar-ring: oklch(0.72 0.15 130 / 0.5);
+
+  /* Global heading font controller (single source of truth) */
+  /* Manrope variable is injected via next/font in app/layout.tsx */
+  --font-heading: var(--font-manrope);
+}
+
+.dark {
+  --background: oklch(0.11 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.08 0 0 / 0.8); /* Dark with transparency for glassy effect */
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.15 0 0 / 0.9);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.72 0.15 130); /* More subtle lime green */
+  --primary-foreground: oklch(0.11 0 0);
+  --secondary: oklch(0.15 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.08 0 0);
+  --muted-foreground: oklch(0.7 0 0);
+  --accent: oklch(0.72 0.15 130); /* Subtle lime green accent */
+  --accent-foreground: oklch(0.11 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.985 0 0 / 0.2);
+  --input: oklch(0.08 0 0);
+  --ring: oklch(0.72 0.15 130 / 0.5); /* Subtle lime green focus ring */
+  --chart-1: oklch(0.72 0.15 130); /* Subtle lime green */
+  --chart-2: oklch(0.15 0 0);
+  --chart-3: oklch(0.396 0.141 25.723);
+  --chart-4: oklch(0.985 0 0); /* White */
+  --chart-5: oklch(0.08 0 0); /* Dark gray */
+  --sidebar: oklch(0.15 0 0); /* Dark gray sidebar */
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.72 0.15 130); /* Subtle lime green */
+  --sidebar-primary-foreground: oklch(0.11 0 0);
+  --sidebar-accent: oklch(0.72 0.15 130);
+  --sidebar-accent-foreground: oklch(0.11 0 0);
+  --sidebar-border: oklch(0.985 0 0 / 0.2);
+  --sidebar-ring: oklch(0.72 0.15 130 / 0.5);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Apply heading font globally */
+  h1, h2, h3, .heading {
+    font-family: var(--font-heading), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
+  /* Added custom animations and effects for the AI SaaS landing page */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Added shimmer animation for buttons */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-border {
+  position: relative;
+  background: linear-gradient(90deg, transparent, oklch(0.72 0.15 130), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+.shimmer-border::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--background);
+  border-radius: inherit;
+}
+
+/* Added glassy background effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Added fade-up animation */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fade-up 0.6s ease-out forwards;
+}
+
+/* Added parallax container */
+.parallax-container {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+}
+
+.parallax-element {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax-back {
+  transform: translateZ(-1px) scale(2);
+}
+
+.parallax-base {
+  transform: translateZ(0);
+}
