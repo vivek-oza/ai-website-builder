@@ -5,39 +5,52 @@
 
 :root {
   /* Updated color palette for AI SaaS with dark theme, lime green accents, and dark blue */
-  --background: oklch(0.11 0 0); /* Dark black #1a1a1a */
-  --foreground: oklch(0.985 0 0); /* White */
-  --card: oklch(0.08 0 0 / 0.8); /* Dark with transparency for glassy effect */
+  --background: oklch(0.11 0 0);
+  /* Dark black #1a1a1a */
+  --foreground: oklch(0.985 0 0);
+  /* White */
+  --card: oklch(0.08 0 0 / 0.8);
+  /* Dark with transparency for glassy effect */
   --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.15 0 0 / 0.9); /* Dark gray instead of blue */
+  --popover: oklch(0.15 0 0 / 0.9);
+  /* Dark gray instead of blue */
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.72 0.15 130); /* More subtle lime green */
+  --primary: #AFFF4E; /* Brand lime */
   --primary-foreground: oklch(0.11 0 0); /* Dark text on lime green */
-  --secondary: oklch(0.15 0 0); /* Dark gray instead of blue */
+  --secondary: oklch(0.15 0 0);
+  /* Dark gray instead of blue */
   --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.08 0 0); /* Dark gray #121212 */
+  --muted: oklch(0.08 0 0);
+  /* Dark gray #121212 */
   --muted-foreground: oklch(0.7 0 0);
-  --accent: oklch(0.72 0.15 130); /* Subtle lime green accent */
+  --accent: #AFFF4E; /* Brand lime accent */
   --accent-foreground: oklch(0.11 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.985 0 0 / 0.2); /* Light border with transparency */
-  --input: oklch(0.08 0 0); /* Dark input background */
-  --ring: oklch(0.72 0.15 130 / 0.5); /* Subtle lime green focus ring */
-  --chart-1: oklch(0.72 0.15 130); /* Subtle lime green */
-  --chart-2: oklch(0.15 0 0); /* Dark gray */
-  --chart-3: oklch(0.577 0.245 27.325); /* Red */
-  --chart-4: oklch(0.985 0 0); /* White */
-  --chart-5: oklch(0.08 0 0); /* Dark gray */
+  --border: oklch(0.985 0 0 / 0.2);
+  /* Light border with transparency */
+  --input: oklch(0.08 0 0);
+  /* Dark input background */
+  --ring: rgba(175, 255, 78, 0.5); /* Brand lime focus ring */
+  --chart-1: #AFFF4E; /* Brand lime */
+  --chart-2: oklch(0.15 0 0);
+  /* Dark gray */
+  --chart-3: oklch(0.577 0.245 27.325);
+  /* Red */
+  --chart-4: oklch(0.985 0 0);
+  /* White */
+  --chart-5: oklch(0.08 0 0);
+  /* Dark gray */
   --radius: 0.5rem;
-  --sidebar: oklch(0.15 0 0); /* Dark gray sidebar */
+  --sidebar: oklch(0.15 0 0);
+  /* Dark gray sidebar */
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.72 0.15 130); /* Subtle lime green */
+  --sidebar-primary: #AFFF4E; /* Brand lime */
   --sidebar-primary-foreground: oklch(0.11 0 0);
-  --sidebar-accent: oklch(0.72 0.15 130);
+  --sidebar-accent: #AFFF4E;
   --sidebar-accent-foreground: oklch(0.11 0 0);
   --sidebar-border: oklch(0.985 0 0 / 0.2);
-  --sidebar-ring: oklch(0.72 0.15 130 / 0.5);
+  --sidebar-ring: rgba(175, 255, 78, 0.5);
 
   /* Global heading font controller (single source of truth) */
   /* Manrope variable is injected via next/font in app/layout.tsx */
@@ -47,36 +60,37 @@
 .dark {
   --background: oklch(0.11 0 0);
   --foreground: oklch(0.985 0 0);
-  --card: oklch(0.08 0 0 / 0.8); /* Dark with transparency for glassy effect */
+  --card: oklch(0.08 0 0 / 0.8);
+  /* Dark with transparency for glassy effect */
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.15 0 0 / 0.9);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.72 0.15 130); /* More subtle lime green */
+  --primary: #AFFF4E; /* Brand lime */
   --primary-foreground: oklch(0.11 0 0);
   --secondary: oklch(0.15 0 0);
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.08 0 0);
   --muted-foreground: oklch(0.7 0 0);
-  --accent: oklch(0.72 0.15 130); /* Subtle lime green accent */
+  --accent: #AFFF4E; /* Brand lime accent */
   --accent-foreground: oklch(0.11 0 0);
   --destructive: oklch(0.396 0.141 25.723);
   --destructive-foreground: oklch(0.985 0 0);
   --border: oklch(0.985 0 0 / 0.2);
   --input: oklch(0.08 0 0);
-  --ring: oklch(0.72 0.15 130 / 0.5); /* Subtle lime green focus ring */
-  --chart-1: oklch(0.72 0.15 130); /* Subtle lime green */
+  --ring: rgba(175, 255, 78, 0.5); /* Brand lime focus ring */
+  --chart-1: #AFFF4E; /* Brand lime */
   --chart-2: oklch(0.15 0 0);
   --chart-3: oklch(0.396 0.141 25.723);
   --chart-4: oklch(0.985 0 0); /* White */
   --chart-5: oklch(0.08 0 0); /* Dark gray */
   --sidebar: oklch(0.15 0 0); /* Dark gray sidebar */
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.72 0.15 130); /* Subtle lime green */
+  --sidebar-primary: #AFFF4E; /* Brand lime */
   --sidebar-primary-foreground: oklch(0.11 0 0);
-  --sidebar-accent: oklch(0.72 0.15 130);
+  --sidebar-accent: #AFFF4E;
   --sidebar-accent-foreground: oklch(0.11 0 0);
   --sidebar-border: oklch(0.985 0 0 / 0.2);
-  --sidebar-ring: oklch(0.72 0.15 130 / 0.5);
+  --sidebar-ring: rgba(175, 255, 78, 0.5);
 }
 
 @theme inline {
@@ -122,12 +136,16 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 
   /* Apply heading font globally */
-  h1, h2, h3, .heading {
+  h1,
+  h2,
+  h3,
+  .heading {
     font-family: var(--font-heading), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
@@ -142,6 +160,7 @@
   0% {
     background-position: -200% 0;
   }
+
   100% {
     background-position: 200% 0;
   }
@@ -149,7 +168,7 @@
 
 .shimmer-border {
   position: relative;
-  background: linear-gradient(90deg, transparent, oklch(0.72 0.15 130), transparent);
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
   background-size: 200% 100%;
   animation: shimmer 2s infinite;
 }
@@ -175,6 +194,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
