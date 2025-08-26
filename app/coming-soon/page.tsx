@@ -68,7 +68,7 @@ export default function ComingSoonPage() {
                 placeholder="Your name (optional)"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="h-12 text-base placeholder:text-base bg-black text-white placeholder:text-zinc-400 border-white/20"
+                className="h-12 text-lg placeholder:text-lg md:text-lg md:placeholder:text-lg bg-black text-white placeholder:text-zinc-400 border-white/20"
               />
               <Input
                 type="email"
@@ -76,7 +76,7 @@ export default function ComingSoonPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="h-12 text-base placeholder:text-base bg-black text-white placeholder:text-zinc-400 border-white/20"
+                className="h-12 text-lg placeholder:text-lg bg-black text-white placeholder:text-zinc-400 border-white/20"
               />
               <LitUpButton type="submit" disabled={loading} size="md" className="w-full mx-auto font-semibold">
                 <PaperPlaneTilt weight="fill" className="w-5 h-5" />
