@@ -228,3 +228,28 @@
 .parallax-base {
   transform: translateZ(0);
 }
+
+/* Ensure text inputs with bg-black render fully black, including autofill */
+@layer base {
+  input.bg-black,
+  input.bg-black:hover,
+  input.bg-black:focus {
+    background-color: #000 !important;
+    color: #fff;
+  }
+
+  /* Chrome/Safari */
+  input.bg-black:-webkit-autofill,
+  input.bg-black:-webkit-autofill:hover,
+  input.bg-black:-webkit-autofill:focus {
+    -webkit-text-fill-color: #fff;
+    box-shadow: 0 0 0px 1000px #000 inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  /* Firefox */
+  input.bg-black:-moz-autofill {
+    -moz-text-fill-color: #fff;
+    box-shadow: 0 0 0px 1000px #000 inset;
+  }
+}
