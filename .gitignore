@@ -19,6 +19,7 @@ yarn-error.log*
 
 # env files
 .env*
+ENV_EXAMPLE.txt
 
 # vercel
 .vercel
