@@ -33,27 +33,27 @@ export function HeroSection() {
   }
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary/20" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,255,0,0.1),transparent_50%)]" />
 
       <div ref={heroRef} className="relative z-10 text-center px-4 max-w-6xl mx-auto opacity-0">
         <div className="inline-flex items-center gap-2 bg-card/50 backdrop-blur-sm border border-border/50 rounded-full px-4 py-2 mb-8">
-          <Lightbulb className="w-4 h-4 text-primary" />
+          <HeadCircuitIcon weight="fill" className="size-6 text-primary" />
           <span className="text-sm text-muted-foreground">AI-Powered Website Builder</span>
         </div>
 
-        <h1 className="text-6xl flex md:flex-row flex-col items-center gap-x-6 font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent font-manrope md:text-6xl lg:text-7xl">
-          <div className="flex items-center gap-2">
-            <div> Build </div> 
+        <h1 className="text-6xl flex md:flex-row flex-col justify-center items-center gap-x-6 font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent font-manrope md:text-6xl lg:text-7xl">
+          <div className="flex items-center">
+            <div> Build </div>
             {/* <HeadCircuitIcon weight="fill" color="#85b749" className="inline-block size-16" /> */}
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center">
             <div> Ship </div>
             {/* <RocketLaunchIcon weight="fill" color="#85b749" className="inline-block size-16" /> */}
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center">
             <div> Repeat </div>
             {/* <ArrowsClockwise weight="fill" color="#85b749" className="inline-block size-16" /> */}
           </div>
