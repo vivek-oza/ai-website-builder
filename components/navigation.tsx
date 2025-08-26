@@ -29,7 +29,7 @@ export function Navigation() {
       <nav
         className={`fixed top-2 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-300 flex-row justify-between bg-[rgba(135,195,52,1)] ${"bg-card/50 backdrop-blur-sm"} rounded-full px-4 sm:px-6 lg:px-8 py-3 sm:py-3 border-border/50 border-0`}
       >
-        <div className="flex items-center w-full max-w-[320px] sm:max-w-[380px] md:max-w-[480px] lg:min-w-[600px] justify-between gap-3 sm:gap-3 lg:gap-[25px]">
+        <div className="flex items-center w-full max-w-[100%] sm:max-w-[640px] md:max-w-[480px] lg:min-w-[700px] justify-between gap-3 sm:gap-3 lg:gap-[25px]">
           <button
             type="button"
             onClick={() => scrollToSection("hero")}
