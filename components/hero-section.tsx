@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
+import { LitUpButton } from "@/components/ui/lit-up-button"
 import { RocketLaunch, Lightbulb, Play, ArrowsClockwise } from "phosphor-react"
 import { RocketLaunchIcon, HeadCircuitIcon } from "@phosphor-icons/react"
 import LightRays from "@/components/ui/light-rays"
@@ -38,19 +39,19 @@ export function HeroSection() {
       <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         {/* Background Effects */}
         <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary/20" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(175,255,78,0.1),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(150,222,63,0.1),transparent_50%)]" />
 
         {/* Light rays background */}
         <LightRays
           raysOrigin="top-center"
-          raysColor="#AFFF4E"
+          raysColor="#96DE3F"
           raysSpeed={0.2}
           lightSpread={2}
           rayLength={2.4}
           followMouse={true}
           mouseInfluence={0.22}
           noiseAmount={0.08}
-          distortion={0.2}
+          distortion={0.05}
           className="absolute inset-0 z-[1]"
         />
 
@@ -83,32 +84,14 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button
-              onClick={() => scrollToSection("pricing")}
-              className="relative inline-flex items-center gap-2 px-8 py-4 text-lg font-bold text-black bg-primary rounded-lg overflow-hidden group transition-all duration-300 hover:scale-105"
-            >
-              {/* Shimmer effect */}
-              <div className="absolute inset-0 -top-1 -bottom-1 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out" />
-
-              {/* Button content */}
-              <span className="relative z-10 flex items-center gap-2">
-                Start Shipping
-                <RocketLaunch className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </span>
-            </button>
-            <button
-              onClick={() => scrollToSection("preview")}
-              className="relative inline-flex items-center gap-2 px-8 py-4 text-lg font-bold text-black bg-primary rounded-lg overflow-hidden group transition-all duration-300 hover:scale-105"
-            >
-              {/* Shimmer effect */}
-              <div className="absolute inset-0 -top-1 -bottom-1 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out" />
-
-              {/* Button content */}
-              <span className="relative z-10 flex items-center gap-2">
-                Watch demo
-                <Play className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </span>
-            </button>
+            <LitUpButton size="lg" onClick={() => scrollToSection("pricing")} className="font-semibold">
+              Start Shipping
+              <RocketLaunch weight="fill" className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+            </LitUpButton>
+            <LitUpButton size="lg" onClick={() => scrollToSection("preview")} className="font-semibold">
+              Watch demo
+              <Play weight="fill" className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+            </LitUpButton>
           </div>
         </div>
       </section>
