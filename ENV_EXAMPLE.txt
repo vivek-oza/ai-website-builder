@@ -3,3 +3,19 @@
 
 # Public site URL (protocol + domain), used in metadata, sitemap, robots, etc.
 NEXT_PUBLIC_SITE_URL=https://www.buildship.in
+
+# SMTP settings (required for waitlist email notifications)
+# Example for Gmail: use an App Password and host smtp.gmail.com port 465
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=465
+EMAIL_USER=your_smtp_username
+EMAIL_PASS=your_smtp_password_or_app_password
+
+# Optional overrides
+EMAIL_TO=buildship.in@gmail.com
+EMAIL_FROM=Buildship Waitlist <no-reply@buildship.in>
+
+# Resend (recommended)
+RESEND_API_KEY=your_resend_api_key
+# Optional: set a custom from (use a verified domain/sender in Resend)
+RESEND_FROM=Buildship Waitlist <onboarding@resend.dev>
