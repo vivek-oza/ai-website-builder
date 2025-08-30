@@ -10,7 +10,7 @@ function isValidEmail(email: string) {
 // Simple branded HTML template (Gmail-safe)
 function waitlistHtml(opts: { name?: string; brand?: { primary: string; site: string } }) {
   const name = opts.name?.trim() || "there";
-  const primary = opts.brand?.primary || "#96DE3F";
+  const primary = opts.brand?.primary || "#C3F400";
   const site = opts.brand?.site || "buildship.in";
   return `
   <!DOCTYPE html>
@@ -84,7 +84,7 @@ export async function POST(req: Request) {
 
       // Send confirmation to the joiner
       const welcomeSubject = "You're on the Buildship waitlist ✨";
-      const html = waitlistHtml({ name, brand: { primary: "#96DE3F", site: "www.buildship.in" } });
+      const html = waitlistHtml({ name, brand: { primary: "#C3F400", site: "www.buildship.in" } });
       await resend.emails.send({ from, to: email, subject: welcomeSubject, html });
     } else if (host && port && user && pass) {
       const transporter = nodemailer.createTransport({
@@ -105,7 +105,7 @@ export async function POST(req: Request) {
         from,
         to: email,
         subject: "You're on the Buildship waitlist ✨",
-        html: waitlistHtml({ name, brand: { primary: "#96DE3F", site: "www.buildship.in" } }),
+        html: waitlistHtml({ name, brand: { primary: "#C3F400", site: "www.buildship.in" } }),
       });
     } else {
       console.warn("[waitlist] Email not configured. Set RESEND_API_KEY (recommended) or SMTP vars (EMAIL_HOST, EMAIL_PORT, EMAIL_USER, EMAIL_PASS).");

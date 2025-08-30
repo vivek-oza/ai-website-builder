@@ -15,7 +15,7 @@
   --popover: oklch(0.15 0 0 / 0.9);
   /* Dark gray instead of blue */
   --popover-foreground: oklch(0.985 0 0);
-  --primary: #96DE3F; /* Brand lime */
+  --primary: #C3F400; /* Brand lime */
   --primary-foreground: oklch(0.11 0 0); /* Dark text on lime green */
   --secondary: oklch(0.15 0 0);
   /* Dark gray instead of blue */
@@ -23,7 +23,7 @@
   --muted: oklch(0.08 0 0);
   /* Dark gray #121212 */
   --muted-foreground: oklch(0.7 0 0);
-  --accent: #96DE3F; /* Brand lime accent */
+  --accent: #C3F400; /* Brand lime accent */
   --accent-foreground: oklch(0.11 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
@@ -31,8 +31,8 @@
   /* Light border with transparency */
   --input: oklch(0.08 0 0);
   /* Dark input background */
-  --ring: rgba(150, 222, 63, 0.5); /* Brand lime focus ring */
-  --chart-1: #96DE3F; /* Brand lime */
+  --ring: rgba(195, 244, 0, 0.5); /* Brand lime focus ring */
+  --chart-1: #C3F400; /* Brand lime */
   --chart-2: oklch(0.15 0 0);
   /* Dark gray */
   --chart-3: oklch(0.577 0.245 27.325);
@@ -45,12 +45,12 @@
   --sidebar: oklch(0.15 0 0);
   /* Dark gray sidebar */
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: #96DE3F; /* Brand lime */
+  --sidebar-primary: #C3F400; /* Brand lime */
   --sidebar-primary-foreground: oklch(0.11 0 0);
-  --sidebar-accent: #96DE3F;
+  --sidebar-accent: #C3F400;
   --sidebar-accent-foreground: oklch(0.11 0 0);
   --sidebar-border: oklch(0.985 0 0 / 0.2);
-  --sidebar-ring: rgba(150, 222, 63, 0.5);
+  --sidebar-ring: rgba(195, 244, 0, 0.5);
 
   /* Global heading font controller (single source of truth) */
   /* Manrope variable is injected via next/font in app/layout.tsx */
@@ -65,32 +65,32 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.15 0 0 / 0.9);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: #96DE3F; /* Brand lime */
+  --primary: #C3F400; /* Brand lime */
   --primary-foreground: oklch(0.11 0 0);
   --secondary: oklch(0.15 0 0);
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.08 0 0);
   --muted-foreground: oklch(0.7 0 0);
-  --accent: #96DE3F; /* Brand lime accent */
+  --accent: #C3F400; /* Brand lime accent */
   --accent-foreground: oklch(0.11 0 0);
   --destructive: oklch(0.396 0.141 25.723);
   --destructive-foreground: oklch(0.985 0 0);
   --border: oklch(0.985 0 0 / 0.2);
   --input: oklch(0.08 0 0);
-  --ring: rgba(150, 222, 63, 0.5); /* Brand lime focus ring */
-  --chart-1: #96DE3F; /* Brand lime */
+  --ring: rgba(195, 244, 0, 0.5); /* Brand lime focus ring */
+  --chart-1: #C3F400; /* Brand lime */
   --chart-2: oklch(0.15 0 0);
   --chart-3: oklch(0.396 0.141 25.723);
   --chart-4: oklch(0.985 0 0); /* White */
   --chart-5: oklch(0.08 0 0); /* Dark gray */
   --sidebar: oklch(0.15 0 0); /* Dark gray sidebar */
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: #96DE3F; /* Brand lime */
+  --sidebar-primary: #C3F400; /* Brand lime */
   --sidebar-primary-foreground: oklch(0.11 0 0);
-  --sidebar-accent: #96DE3F;
+  --sidebar-accent: #C3F400;
   --sidebar-accent-foreground: oklch(0.11 0 0);
   --sidebar-border: oklch(0.985 0 0 / 0.2);
-  --sidebar-ring: rgba(150, 222, 63, 0.5);
+  --sidebar-ring: rgba(195, 244, 0, 0.5);
 }
 
 @theme inline {

@@ -39,17 +39,17 @@ export function HeroSection() {
       <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         {/* Background Effects */}
         <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary/20" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(150,222,63,0.1),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(195,244,0,0.1),transparent_50%)]" />
 
         {/* Light rays background */}
         <LightRays
           raysOrigin="top-center"
-          raysColor="#96DE3F"
+          raysColor="#C3F400"
           raysSpeed={0.2}
           lightSpread={2}
           rayLength={2.4}
           followMouse={true}
-          mouseInfluence={0.22}
+          mouseInfluence={0.05}
           noiseAmount={0.08}
           distortion={0.05}
           className="absolute inset-0 z-[1]"
