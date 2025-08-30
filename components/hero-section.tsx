@@ -50,7 +50,7 @@ export function HeroSection() {
           rayLength={1}
           followMouse={true}
           mouseInfluence={0.03}
-          noiseAmount={0.2}
+          noiseAmount={0.02}
           distortion={0.05}
           className="absolute inset-0 z-[1]"
         />
