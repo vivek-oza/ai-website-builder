@@ -45,12 +45,12 @@ export function HeroSection() {
         <LightRays
           raysOrigin="top-center"
           raysColor="#C3F400"
-          raysSpeed={0.2}
-          lightSpread={2}
-          rayLength={2.4}
+          raysSpeed={0.5}
+          lightSpread={1}
+          rayLength={1}
           followMouse={true}
-          mouseInfluence={0.05}
-          noiseAmount={0.08}
+          mouseInfluence={0.03}
+          noiseAmount={0.2}
           distortion={0.05}
           className="absolute inset-0 z-[1]"
         />
